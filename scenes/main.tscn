@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://x2n5yavf2di8"]
+
+[ext_resource type="Script" uid="uid://dgfclp4kn7k42" path="res://scripts/main.gd" id="1_ig7tw"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ig7tw")
+
+[node name="LayoutRoot" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LabelTitle" type="Label" parent="LayoutRoot"]
+layout_mode = 2
+text = "SCOPA 2 (debug)"
+
+[node name="TableRow" type="HBoxContainer" parent="LayoutRoot"]
+layout_mode = 2
+
+[node name="HandRow" type="HBoxContainer" parent="LayoutRoot"]
+layout_mode = 2
+
+[node name="LogLabel" type="Label" parent="LayoutRoot"]
+layout_mode = 2
+text = "Ready..."
